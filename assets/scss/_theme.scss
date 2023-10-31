@@ -1,0 +1,189 @@
+// font 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'satoshi';
+    src: url('../fonts/Satoshi-Variable.ttf') format('truetype');
+         font-weight: 300 900;
+         font-display: swap;
+         font-style: normal;
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'satoshi', sans-serif;
+    font-variation-settings: 'wght' 400;
+}
+
+// colors
+:root{
+    --accent01: #008978;
+    --gr: radial-gradient(210.19% 141.6% at 39.97% -50.93%, #1DD3B0 0%, #16AC8F 100%);
+    --dark: #2C2C2C;
+    --dark-blue: #3120D2;
+}
+
+// body {
+//     background: #F3F3F3;
+// }
+
+li {
+    list-style: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+@keyframes rotate {
+    0%{
+        transform: translate(-50% , -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50% , -50%) rotate(360deg);
+    }
+}
+
+.main-btn {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    background: var(--dark-blue);
+    padding: 15px 35px;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    overflow: hidden;
+    min-width: max-content;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    border: none;
+    outline: none;
+
+    &.white-btn{
+        background: white;
+
+        span{
+            color: var(--dark-blue);
+        }
+    }
+
+    &:hover{
+        transform: scale(0.95) !important;
+        box-shadow: none !important;
+    }
+
+    &:active{
+        filter: brightness(105%);
+    }
+
+    span {
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        position: relative;
+        font-variation-settings: 'wght' 500;
+        z-index: 5;
+        transition: 0.2s ease-in-out;
+        font-weight: 600;
+
+        span{
+            font-size: 1.3em;
+            font-weight: 700;
+        }
+    }
+
+    &.block-btn{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    &.center{
+        display: flex;
+        max-width: max-content;
+        align-items: center;
+        gap: 10px;
+        margin: 0 auto;
+    }
+
+    &.white{
+        background: white;
+
+        span{
+            color: black;
+        }
+    }
+
+    &.border-btn{
+        background: transparent;
+        border: 1px solid black;
+
+        span{
+
+            color: black;
+        }
+    }
+}
+
+.sec-head{
+    font-size: 42px;
+    font-variation-settings: 'wght' 700;
+}
+
+.para{
+    font-size: 18px;
+    color: #787878;
+    font-variation-settings: 'wght' 400;
+    line-height: 140%;
+}
+
+/* firefox */
+//firefox
+
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #69B444 transparent;
+}
+.custom-scrollbar:-webkit-scrollbar {
+    width: 11px;
+}
+.custom-scrollbar:-webkit-scrollbar-track {
+    background: transparent;
+}
+.custom-scrollbar:-webkit-scrollbar-thumb {
+    background-color: #69B444;
+    border-radius: 6px;
+    border: 3px solid transparent;
+}
+/* webkit browsers */
+.custom-scrollbar::-webkit-scrollbar,
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    height: 26px;
+    border-radius: 13px;
+    background-clip: padding-box;
+    border: 10px solid transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 0 10px;
+}
+.sec{
+    padding: 5em 0px;
+    overflow: hidden;
+}
+
+.para{
+    font-size: 16px;
+
+    &.white{
+        color: white;
+    }
+}
